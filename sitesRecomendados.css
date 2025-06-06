@@ -1,0 +1,58 @@
+
+.SitesRecomendados{
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.SitesRecomendados > div{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.SitesRecomendados > div > a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SitesRecomendados > div > a > img{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+.recomendado1{
+    height: 40px;
+}
+.recomendado2{
+    height: 50px;
+}
+.resize{
+    height: 50px  !important;
+}
+.recomendado3{
+    height: 30px;
+}
+@media (max-width: 1000px) {
+    .SitesRecomendados > div{
+        width: 300px !important;
+    }
+    .SitesRecomendados{
+        flex-direction: row;
+    }
+}
+@media (max-width:600px){
+    .SitesRecomendados > div{
+        width: 80% !important;
+    }
+    .SitesRecomendados{
+        flex-direction: column;
+    }
+}
